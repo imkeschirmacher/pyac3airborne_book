@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MiRAC-P &#8212; pyac3airborne-book</title>
     
-  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -19,14 +20,10 @@
 
     
       
-  <link rel="stylesheet"
-    href="../_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -34,7 +31,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -44,10 +41,10 @@
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
@@ -58,14 +55,14 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="HATPRO" href="hatpro.html" />
     <link rel="prev" title="MiRAC-A" href="mirac_a.html" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
-
-
-
+    
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
     
 
     <div class="container-xl">
@@ -74,37 +71,41 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="../index.html">
-  
-  <img src="../_static/logo.png" class="logo" alt="logo">
-  
-  
-  <h1 class="site-logo" id="site-title">pyac3airborne-book</h1>
-  
-</a>
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">pyac3airborne-book</h1>
+      
+    </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form>
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <ul class="nav sidenav_l1">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../intro.html">
    Introduction
   </a>
  </li>
 </ul>
-<ul class="current nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="../campaigns.html">
-   Campaigns
-  </a>
- </li>
- <li class="toctree-l1 current active collapsible-parent">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="../datasets.html">
    Datasets
   </a>
-  <ul class="current collapse-ul">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="mirac_a.html">
      MiRAC-A
@@ -127,12 +128,17 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="fish_eye_camera.html">
-     Fish-eye Camera
+     Fish-eye camera
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="nevzorov_and_pms.html">
+     PMS and Nevzorov
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="kt19.html">
-     KT-19
+     CMP22, CGR4 and KT-19
     </a>
    </li>
    <li class="toctree-l2">
@@ -142,50 +148,57 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="gps_ins.html">
-     GPS/INS
+     GPS and INS
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../guidelines.html">
-   Flight-phase Separation
+ <li class="toctree-l1">
+  <a class="reference internal" href="../flight_segmentation.html">
+   Flight-phase separation
   </a>
-  <ul class="collapse-ul">
-   <li class="toctree-l2">
-    <a class="reference internal" href="../yamls/flights.html">
-     flight-phase-separation
-    </a>
-   </li>
-  </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../code.html">
-   Code
+   Toolbox and examples
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../running_locally.html">
+     Running pyac3airborne_book locally
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../examples/caching_and_local_datasets.html">
+     Caching and local datasets
+    </a>
+   </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../examples/reading_the_flight_phase_files.html">
-     Reading the flight phase files
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../examples/flight_tracks.html">
-     Flight tracks
+     Querying the flight phase files
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../examples/land_ocean.html">
-     land/ocean mask
+     Land-ocean mask
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../examples/awipev_overflights.html">
+     AWIPEV overflights
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../examples/polarstern_overflights.html">
+     Polarstern overflights
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../references.html">
@@ -194,6 +207,7 @@
  </li>
 </ul>
 
+    </div>
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
@@ -243,12 +257,12 @@
 
             <!-- Source interaction buttons -->
 
-
             <!-- Full screen (wrap in <a> to have style consistency -->
-            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                    title="Fullscreen mode"><i
-                        class="fas fa-expand"></i></button></a>
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
 
@@ -257,7 +271,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/datasets/mirac_p.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/igmk/pyac3airborne_book/main?urlpath=tree/pyac3airborne_book/datasets/mirac_p.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -274,12 +288,11 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-        <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i>
-            Contents
-        </div>
-        <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#data-access">
    Data access
@@ -302,8 +315,7 @@
  </li>
 </ul>
 
-        </nav>
-        
+            </nav>
         </div>
     </div>
 </div>
@@ -319,7 +331,7 @@
 <div class="section" id="data-access">
 <h2>Data access<a class="headerlink" href="#data-access" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>To load the data we first load the (AC)³airborne meta data catalogue. More information on the catalog can be found <a class="reference external" href="https://github.com/igmk/ac3airborne-intake#ac3airborne-intake-catalogue">here</a>.</p></li>
+<li><p>To analyse the data they first have to be loaded by importing the (AC)³airborne meta data catalogue. To do so the pyac3airborne package has to be installed. More information on how to do that and about the catalog can be found <a class="reference external" href="https://github.com/igmk/ac3airborne-intake#ac3airborne-intake-catalogue">here</a>.</p></li>
 </ul>
 </div>
 <div class="section" id="get-data">
@@ -334,7 +346,7 @@
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cat</span> <span class="o">=</span> <span class="n">ac3airborne</span><span class="o">.</span><span class="n">get_intake_catalog</span><span class="p">()</span>
-<span class="nb">list</span><span class="p">(</span><span class="n">cat</span><span class="o">.</span><span class="n">Polar5</span><span class="o">.</span><span class="n">MIRAC_P</span><span class="p">)</span>
+<span class="nb">list</span><span class="p">(</span><span class="n">cat</span><span class="o">.</span><span class="n">P5</span><span class="o">.</span><span class="n">MIRAC_P</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -378,11 +390,11 @@
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Have a look at the attributes of the xarray dataset <code class="docutils literal notranslate"><span class="pre">ds_mirac_p</span></code> for all relevant information on the dataset, such as author, contact, or citation infromation.</p>
+<p>Have a look at the attributes of the xarray dataset <code class="docutils literal notranslate"><span class="pre">ds_mirac_p</span></code> for all relevant information on the dataset, such as author, contact, or citation information.</p>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds_mirac_p</span> <span class="o">=</span> <span class="n">ds_cth</span> <span class="o">=</span> <span class="n">cat</span><span class="p">[</span><span class="s1">&#39;Polar5&#39;</span><span class="p">][</span><span class="s1">&#39;MIRAC_P&#39;</span><span class="p">][</span><span class="s1">&#39;ACLOUD_P5_RF05&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">to_dask</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds_mirac_p</span> <span class="o">=</span> <span class="n">ds_cth</span> <span class="o">=</span> <span class="n">cat</span><span class="p">[</span><span class="s1">&#39;P5&#39;</span><span class="p">][</span><span class="s1">&#39;MIRAC_P&#39;</span><span class="p">][</span><span class="s1">&#39;ACLOUD_P5_RF05&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">to_dask</span><span class="p">()</span>
 <span class="n">ds_mirac_p</span>
 </pre></div>
 </div>
@@ -760,11 +772,11 @@ Attributes: (12/14)
     instrument:   MiRAC-P: Microwave Radar/radiometer for Arctic Clouds (pass...
     history:      measured onboard Polar 5 during ACLOUD campaign; processed,...
     contact:      n.risse@uni-koeln.de, mario.mech@uni-koeln.de
-    created:      2021-07-19</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.Dataset</div></div><ul class='xr-sections'><li class='xr-section-item'><input id='section-bf2ff8cb-f34c-4c30-ba14-30fdc549ce75' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-bf2ff8cb-f34c-4c30-ba14-30fdc549ce75' class='xr-section-summary'  title='Expand/collapse section'>Dimensions:</label><div class='xr-section-inline-details'><ul class='xr-dim-list'><li><span class='xr-has-index'>channel</span>: 8</li><li><span class='xr-has-index'>time</span>: 14883</li></ul></div><div class='xr-section-details'></div></li><li class='xr-section-item'><input id='section-3e9291b8-be98-447c-b98f-aaee7b80e054' class='xr-section-summary-in' type='checkbox'  checked><label for='section-3e9291b8-be98-447c-b98f-aaee7b80e054' class='xr-section-summary' >Coordinates: <span>(2)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>time</span></div><div class='xr-var-dims'>(time)</div><div class='xr-var-dtype'>datetime64[ns]</div><div class='xr-var-preview xr-preview'>2017-05-25T08:20:32 ... 2017-05-...</div><input id='attrs-a29873a5-bf91-4ba7-a117-d0b5ec834ae0' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-a29873a5-bf91-4ba7-a117-d0b5ec834ae0' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-a3556cc7-ec63-4083-bee8-ccd9fe594208' class='xr-var-data-in' type='checkbox'><label for='data-a3556cc7-ec63-4083-bee8-ccd9fe594208' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>standard_name :</span></dt><dd>time</dd><dt><span>long_name :</span></dt><dd>time in seconds since epoch</dd></dl></div><div class='xr-var-data'><pre>array([&#x27;2017-05-25T08:20:32.000000000&#x27;, &#x27;2017-05-25T08:20:33.000000000&#x27;,
+    created:      2021-07-19</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.Dataset</div></div><ul class='xr-sections'><li class='xr-section-item'><input id='section-72a05542-3d67-44c8-9c79-71a0830f6ed3' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-72a05542-3d67-44c8-9c79-71a0830f6ed3' class='xr-section-summary'  title='Expand/collapse section'>Dimensions:</label><div class='xr-section-inline-details'><ul class='xr-dim-list'><li><span class='xr-has-index'>channel</span>: 8</li><li><span class='xr-has-index'>time</span>: 14883</li></ul></div><div class='xr-section-details'></div></li><li class='xr-section-item'><input id='section-a1b00274-a4d3-425b-8911-f9b5b844db39' class='xr-section-summary-in' type='checkbox'  checked><label for='section-a1b00274-a4d3-425b-8911-f9b5b844db39' class='xr-section-summary' >Coordinates: <span>(2)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>time</span></div><div class='xr-var-dims'>(time)</div><div class='xr-var-dtype'>datetime64[ns]</div><div class='xr-var-preview xr-preview'>2017-05-25T08:20:32 ... 2017-05-...</div><input id='attrs-8fc10dc0-b704-4410-b482-35e81bd570f1' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-8fc10dc0-b704-4410-b482-35e81bd570f1' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-337181b8-f50a-442b-954d-f8228e76e4ef' class='xr-var-data-in' type='checkbox'><label for='data-337181b8-f50a-442b-954d-f8228e76e4ef' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>standard_name :</span></dt><dd>time</dd><dt><span>long_name :</span></dt><dd>time in seconds since epoch</dd></dl></div><div class='xr-var-data'><pre>array([&#x27;2017-05-25T08:20:32.000000000&#x27;, &#x27;2017-05-25T08:20:33.000000000&#x27;,
        &#x27;2017-05-25T08:20:34.000000000&#x27;, ..., &#x27;2017-05-25T12:38:34.000000000&#x27;,
        &#x27;2017-05-25T12:38:35.000000000&#x27;, &#x27;2017-05-25T12:38:36.000000000&#x27;],
-      dtype=&#x27;datetime64[ns]&#x27;)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>channel</span></div><div class='xr-var-dims'>(channel)</div><div class='xr-var-dtype'>int64</div><div class='xr-var-preview xr-preview'>0 1 2 3 4 5 6 7</div><input id='attrs-55068973-3c23-4456-b128-eb4ad5be5620' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-55068973-3c23-4456-b128-eb4ad5be5620' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-d5d40ca3-8285-4b72-958c-3a9d7cf096ae' class='xr-var-data-in' type='checkbox'><label for='data-d5d40ca3-8285-4b72-958c-3a9d7cf096ae' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>standard_name :</span></dt><dd>channel</dd><dt><span>long_name :</span></dt><dd>MiRAC-P radiometer channel number</dd></dl></div><div class='xr-var-data'><pre>array([0, 1, 2, 3, 4, 5, 6, 7])</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-d7e81a38-668d-423b-b813-f1a3f54fb9a5' class='xr-section-summary-in' type='checkbox'  checked><label for='section-d7e81a38-668d-423b-b813-f1a3f54fb9a5' class='xr-section-summary' >Data variables: <span>(2)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>frequency</span></div><div class='xr-var-dims'>(channel)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-b8d6e9e1-2a48-49fd-b9fa-a70a139e7ab9' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-b8d6e9e1-2a48-49fd-b9fa-a70a139e7ab9' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-f378247a-00fd-4f5f-a7b9-b4050209e280' class='xr-var-data-in' type='checkbox'><label for='data-f378247a-00fd-4f5f-a7b9-b4050209e280' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>standard_name :</span></dt><dd>frequency</dd><dt><span>long_name :</span></dt><dd>MiRAC-P radiometer channel center frequency</dd><dt><span>units :</span></dt><dd>GHz</dd></dl></div><div class='xr-var-data'><pre>array([183.91, 184.81, 185.81, 186.81, 188.31, 190.81, 243.  , 340.  ],
-      dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>tb</span></div><div class='xr-var-dims'>(time, channel)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-fa2b5508-5e6e-4806-a78d-370f54e9849f' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-fa2b5508-5e6e-4806-a78d-370f54e9849f' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-a32a2adb-7806-42a9-bd35-ca182e686987' class='xr-var-data-in' type='checkbox'><label for='data-a32a2adb-7806-42a9-bd35-ca182e686987' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>standard_name :</span></dt><dd>tb</dd><dt><span>long_name :</span></dt><dd>MiRAC-P brightness temperature</dd><dt><span>units :</span></dt><dd>K</dd><dt><span>description :</span></dt><dd>MiRAC-P brightness temperature measured with 1 second integration time</dd></dl></div><div class='xr-var-data'><pre>[119064 values with dtype=float32]</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-a79f6e65-9633-4b62-9e07-b5169bdcb381' class='xr-section-summary-in' type='checkbox'  ><label for='section-a79f6e65-9633-4b62-9e07-b5169bdcb381' class='xr-section-summary' >Attributes: <span>(14)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'><dt><span>institution :</span></dt><dd>Institute of Geophysics and Meteorology (IGM), University of Cologne</dd><dt><span>source :</span></dt><dd>airborne observation</dd><dt><span>references :</span></dt><dd>https://doi.org/10.5194/amt-12-5019-2019</dd><dt><span>author :</span></dt><dd>Nils Risse</dd><dt><span>convention :</span></dt><dd>CF-1.8</dd><dt><span>featureType :</span></dt><dd>trajectory</dd><dt><span>mission :</span></dt><dd>ACLOUD</dd><dt><span>platform :</span></dt><dd>Polar 5</dd><dt><span>flight_id :</span></dt><dd>RF05</dd><dt><span>title :</span></dt><dd>MiRAC-P brightness temperature</dd><dt><span>instrument :</span></dt><dd>MiRAC-P: Microwave Radar/radiometer for Arctic Clouds (passive)</dd><dt><span>history :</span></dt><dd>measured onboard Polar 5 during ACLOUD campaign; processed, quality-checked and reformatted by University of Cologne</dd><dt><span>contact :</span></dt><dd>n.risse@uni-koeln.de, mario.mech@uni-koeln.de</dd><dt><span>created :</span></dt><dd>2021-07-19</dd></dl></div></li></ul></div></div></div></div>
+      dtype=&#x27;datetime64[ns]&#x27;)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>channel</span></div><div class='xr-var-dims'>(channel)</div><div class='xr-var-dtype'>int64</div><div class='xr-var-preview xr-preview'>0 1 2 3 4 5 6 7</div><input id='attrs-bdae4b35-e66a-491f-9bd2-894548f59937' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-bdae4b35-e66a-491f-9bd2-894548f59937' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-af3f5040-f04e-4382-bc70-bbc4b20d9822' class='xr-var-data-in' type='checkbox'><label for='data-af3f5040-f04e-4382-bc70-bbc4b20d9822' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>standard_name :</span></dt><dd>channel</dd><dt><span>long_name :</span></dt><dd>MiRAC-P radiometer channel number</dd></dl></div><div class='xr-var-data'><pre>array([0, 1, 2, 3, 4, 5, 6, 7])</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-ff0c16a9-de11-4de3-92cb-357a7d3021ec' class='xr-section-summary-in' type='checkbox'  checked><label for='section-ff0c16a9-de11-4de3-92cb-357a7d3021ec' class='xr-section-summary' >Data variables: <span>(2)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>frequency</span></div><div class='xr-var-dims'>(channel)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-f74c09f4-b668-4a98-94a8-1bdea08c5c54' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-f74c09f4-b668-4a98-94a8-1bdea08c5c54' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-56bcd9b4-6300-4e4c-9eab-57a27ffcae95' class='xr-var-data-in' type='checkbox'><label for='data-56bcd9b4-6300-4e4c-9eab-57a27ffcae95' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>standard_name :</span></dt><dd>frequency</dd><dt><span>long_name :</span></dt><dd>MiRAC-P radiometer channel center frequency</dd><dt><span>units :</span></dt><dd>GHz</dd></dl></div><div class='xr-var-data'><pre>array([183.91, 184.81, 185.81, 186.81, 188.31, 190.81, 243.  , 340.  ],
+      dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>tb</span></div><div class='xr-var-dims'>(time, channel)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-bb577418-8776-41c6-9ba8-bc25d97af0f5' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-bb577418-8776-41c6-9ba8-bc25d97af0f5' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-783a648a-658a-4636-9437-db7b682ae5b8' class='xr-var-data-in' type='checkbox'><label for='data-783a648a-658a-4636-9437-db7b682ae5b8' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>standard_name :</span></dt><dd>tb</dd><dt><span>long_name :</span></dt><dd>MiRAC-P brightness temperature</dd><dt><span>units :</span></dt><dd>K</dd><dt><span>description :</span></dt><dd>MiRAC-P brightness temperature measured with 1 second integration time</dd></dl></div><div class='xr-var-data'><pre>[119064 values with dtype=float32]</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-c93da096-4728-4374-9624-5cf5c716c776' class='xr-section-summary-in' type='checkbox'  ><label for='section-c93da096-4728-4374-9624-5cf5c716c776' class='xr-section-summary' >Attributes: <span>(14)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'><dt><span>institution :</span></dt><dd>Institute of Geophysics and Meteorology (IGM), University of Cologne</dd><dt><span>source :</span></dt><dd>airborne observation</dd><dt><span>references :</span></dt><dd>https://doi.org/10.5194/amt-12-5019-2019</dd><dt><span>author :</span></dt><dd>Nils Risse</dd><dt><span>convention :</span></dt><dd>CF-1.8</dd><dt><span>featureType :</span></dt><dd>trajectory</dd><dt><span>mission :</span></dt><dd>ACLOUD</dd><dt><span>platform :</span></dt><dd>Polar 5</dd><dt><span>flight_id :</span></dt><dd>RF05</dd><dt><span>title :</span></dt><dd>MiRAC-P brightness temperature</dd><dt><span>instrument :</span></dt><dd>MiRAC-P: Microwave Radar/radiometer for Arctic Clouds (passive)</dd><dt><span>history :</span></dt><dd>measured onboard Polar 5 during ACLOUD campaign; processed, quality-checked and reformatted by University of Cologne</dd><dt><span>contact :</span></dt><dd>n.risse@uni-koeln.de, mario.mech@uni-koeln.de</dd><dt><span>created :</span></dt><dd>2021-07-19</dd></dl></div></li></ul></div></div></div></div>
 </div>
 <p>The dataset includes nadir brightness temperatures (<code class="docutils literal notranslate"><span class="pre">tb</span></code>) observed by MiRAC-P at the 183.31 GHz water vapor absorption line (183±0.6, ±1.5, ±2.5, ±3.5, ±5.0, ±7.5 GHz) and two window channels at 243 and 340 GHz.</p>
 </div>
@@ -807,10 +819,10 @@ Attributes: (12/14)
 </div>
 </div>
 </div>
-<p>In polar regions, the surface type is helpful for the interpretation of airborne passive microwave observations, especially near the marginal sea ice zone, as generally a higher emissivity is expected over sea ice compared to open ocean. Therefore we also load AMSR2 sea ice concentration data along the Polar 5 flight track, which is operationally derived by the University of Bremen.</p>
+<p>In polar regions, the surface type is helpful for the interpretation of airborne passive microwave observations, especially near the marginal sea ice zone, as generally a higher emissivity is expected over sea ice compared to open ocean. Therefore, we also load AMSR2 sea ice concentration data along the Polar 5 flight track, which is operationally derived by the University of Bremen.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds_sea_ice</span> <span class="o">=</span> <span class="n">cat</span><span class="p">[</span><span class="s1">&#39;Polar5&#39;</span><span class="p">][</span><span class="s1">&#39;AMSR2_SIC&#39;</span><span class="p">][</span><span class="s1">&#39;ACLOUD_P5_RF05&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">to_dask</span><span class="p">()</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds_sea_ice</span> <span class="o">=</span> <span class="n">cat</span><span class="p">[</span><span class="s1">&#39;P5&#39;</span><span class="p">][</span><span class="s1">&#39;AMSR2_SIC&#39;</span><span class="p">][</span><span class="s1">&#39;ACLOUD_P5_RF05&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">to_dask</span><span class="p">()</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span>
     <span class="n">time</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="n">seg</span><span class="p">[</span><span class="s2">&quot;start&quot;</span><span class="p">],</span> <span class="n">seg</span><span class="p">[</span><span class="s2">&quot;end&quot;</span><span class="p">]))</span>
 </pre></div>
 </div>
@@ -899,20 +911,40 @@ Attributes: (12/14)
               </div>
               
         
-        <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="mirac_a.html" title="previous page">MiRAC-A</a>
-    <a class='right-next' id="next-link" href="hatpro.html" title="next page">HATPRO</a>
 
-        </div>
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="mirac_a.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">MiRAC-A</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="hatpro.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">HATPRO</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         
-          By Mario Mech<br/>
+          By pyac3airborne community<br/>
         
             &copy; Copyright 2021.<br/>
       </p>
@@ -923,11 +955,9 @@ Attributes: (12/14)
 
       </div>
     </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-    
-  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
-
-
-    
+  
   </body>
 </html>
